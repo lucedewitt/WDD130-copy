@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Drake</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" alt="Homepage" class="h-font">Home</a>
+        <a href="richard.html" alt="Richard's page" class="h-font">Richard Grayson</a>
+        <a href="jason.html" alt="Jason's page" class="h-font">Jason Todd</a>
+        <a href="tim.html" alt="Tim's page" class="h-font">Tim Drake</a>
+        <a href="damian.html" alt="Damian's page" class="h-font">Damian Wayne</a>
+    </nav>
+    <div id="tim-banner">
+        <h1>Timothy (Tim) Drake</h1>
+    </div>
+    <div id="tim-background">
+        <h2>Background</h2>
+        <p>Tim was raised by his parents, Jack and Janet Drake. The Drake's lived in a mansion next door to the Waynes, and Tim's parents weren't around often. When Tim was a toddler, he went to the circus the Flying Grayson's were performing at. He met Dick, and watched saw his parents die. Because Tim was left alone so often, he grew bored and started to follow Batman and Robin around, taking pictures. He discovered their true identities, because Dick is one of the few people capible of doing a quadruple sumersault. After Jason died, Batman became violent, putting criminals in the hospital. Tim knew he needed help, needed a Robin to balance him. He went to Dick, and tried to convince him to return as Robin, but Dick refused. Since there was no one else, 14 year old Tim took the Robin costume (with Alfred's help) and went to rescue Batman and Nightwing. Bruce reluctantly took Tim as an aprentice, and Dick helped train and mentor Tim.</p>
+    </div>
+    <div id="tim-history">
+        <h2>History</h2>
+        <p>During Tim's time as robin, he focused more on thinking and dective work than his predecessors. He was also trained by Lady Shiva, a famous assassin. Tim has had several bad encounters with the Joker. Tim was tortured and brainwashed by the Joker, and briefly became Joker Jr. Luckily, Tim was able to recover. On another occasion, he was wounded and deafeated by the Joker. When Nightwing came to save him, Joker made him believe Tim was dead, and mocked Jason's death. Tim meanwhile, was alive, and rushed over to join Nightwing. (Nightwing accidentally killed the Joker, but Batman was able to resuscitate him.) Tim is the leader of his generation of Young Justice, some of his best friends. Eventually, his parents die, and Tim is officially adopted by Bruce.</p>
+        <p>Later, Batman is presumed dead, but Tim believes him to be alive. However, the idea is so far fetched, no one believes him. After loosing Robin to Damian, Tim heads off on his own to rescue Bruce. He joins the League of Assassins, which has what he needs to succeed. However, their time together doesn't end well. At some point, Tim is injured, and while treating him the League just straight up steals his spleen. Tim gets revenge by blowing up many of the League's bases, and beating their leader, Ra's Al Ghul. During this adventure, Tim takes the mantle Red Robin, which is still is to this day.</p>
+    </div>
+    <div id="tim-skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Martial Artist</li>
+            <li>Escapologist</li>
+            <li>Intellect (Batman says Tim could be smarter than him)</li>
+            <li>Brilliant Dectective (as good as Batman)</li>
+            <li>Tactician</li>
+            <li>Acrobat</li>
+            <li>Analyst</li>
+            <li>Hacker</li>
+            <li>Programmer</li>
+            <li>Weapon's Master (uses a bow staff)</li>
+            <li>Gagetry</li>
+            <li>Disguise</li>
+            <li>Leadership</li>
+            <li>Peak Condition (speed, strength, agility, stamia, etc)</li>
+        </ul>
+    </div>
+    <!-- Images used to open the lightbox -->
+    <div class="row">
+        <div class="column">
+            <img src="images/robin_tim.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/tim_eras.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+        <img src="images/red_robin_tim3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+            <img src="images/normal_tim.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+    </div>
+  
+  <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="img1_wide.jpg" style="width:100%">
+            </div>
+  
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="img2_wide.jpg" style="width:100%">
+            </div>
+  
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="img3_wide.jpg" style="width:100%">
+            </div>
+  
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="img4_wide.jpg" style="width:100%">
+            </div>
+  
+      <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+  
+      <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="images/robin_tim.jpg" onclick="currentSlide(1)" alt="Tim as Robin">
+            </div>
+  
+            <div class="column">
+                <img class="demo" src="images/tim_eras.jpg" onclick="currentSlide(2)" alt="Tim through the ages">
+            </div>
+  
+            <div class="column">
+                <img class="demo" src="images/red_robin_tim3.jpg" onclick="currentSlide(3)" alt="Tim as Red Robin">
+            </div>
+  
+            <div class="column">
+                <img class="demo" src="images/normal_tim.jpg" onclick="currentSlide(4)" alt="Tim Drake">
+            </div>
+        </div>
+    </div>
+    <button id="tim-songs">♪</button>
+    <div id="tim-songs-list" class="modal">
+        <div class="modal">
+          <span class="close">&times;</span>
+          <ul>
+            <li>People Watching by Conan Gray</li>
+            <li>I'm Still Standing by Elton John</li>
+            <li>Are You Satisfied by MARINA</li>
+            <li>Sharks by Imagine Dragons</li>
+            <li>Unsteady by X Ambassadors</li>
+            <li>Can't Hold Us by Macklemore</li>
+            <li>Fine by Kyle Hume</li>
+            <li>The Last Of The Real Ones by Fall Out Boy</li>
+            <li>Numb Little Bug by Em Beihold</li>
+            <li>Bad Day by Daniel Powter</li>
+          </ul>
+        </div>
+    </div>
+    <footer>
+        <p id="f-info">2024 - Luce DeWitt &copy;</p>
+        <p id="f-credit">Credit to DC for the creation of the characters</p>
+        <a href="siteplan.html" alt="siteplan">Siteplan</a>
+    </footer>
+</body>
+</html>

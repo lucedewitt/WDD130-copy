@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Family</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" alt="Homepage" class="h-font">Home</a>
+        <a href="richard.html" alt="Richard's page" class="h-font">Richard Grayson</a>
+        <a href="jason.html" alt="Jason's page" class="h-font">Jason Todd</a>
+        <a href="tim.html" alt="Tim's page" class="h-font">Tim Drake</a>
+        <a href="damian.html" alt="Damian's page" class="h-font">Damian Wayne</a>
+    </nav>
+    <div id="parallax"></div>
+    <div id="introduction">
+        <img src="images/all_robins1.jpg" alt="Picture of the 4 Robins">
+        <h1 class="h-font">Introduction</h1>
+        <p>This website is a guide on the main four Robins! Batman has had many partners over the years, and together they make a vigilante family. If you didn't realize there was more than one Robin, this is the right place! Each Robin will get their own page, giving brief sections on backstory, history, and skills. Many have new identities, which will also be covered. Because there's a lot of media with many different authors, I've chosen to include what I think is most in character and realistic, and I've included the timelines that make the most sense. Due to time constriants, only 4 memebers of the "Bat Family" will be covered, but the Wayne Family also includes Alfred, Bruce, Cass, Duke, Stephanie, and more. If this website sparks your interest, check them out!</p>
+    </div>
+    <div id="intro-robins">
+        <div id="robin1">
+            <h2 id="r1-title" class="h-font">Robin 1</h2>
+            <img src="images/dick_intro3.jpg" alt="Dick Grayson" id="r1-img">
+            <h2 id="r1-name" class="h-font">Richard "Dick" Grayson</h2>
+        </div>
+        <div id="robin2">
+            <h2 id="r2-title" class="h-font">Robin 2</h2>
+            <img src="images/jason_intro5.jpg" alt="Jason Todd">
+            <h2 id="r2-name" class="h-font">Jason Todd</h2>
+        </div>
+        <div id="robin3">
+            <h2 id="r3-title" class="h-font">Robin 3</h2>
+            <img src="images/tim_intro2.jpg" alt="Tim Drake">
+            <h2 id="r3-name" class="h-font">Timothy "Tim" Drake</h2>
+        </div>
+        <div id="robin4">
+            <h2 id="r4-title" class="h-font">Robin 4</h2>
+            <img src="images/damian_intro3.jpg" alt="Damian Wayne">
+            <h2 id="r4-name" class="h-font">Damian Wayne</h2>
+        </div>
+    </div>
+    <div class="button">
+        <button id="batfam-songs">♪</button>
+    </div>
+    <div id="batfam-songs-list" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h1 class="h-font">Themed Song Recommendations</h1>
+          <ul>
+            <li>Hey Brother by Avicii</li>
+            <li>Victorious by Panic! At The Disco</li>
+            <li>Stressed Out by Twenty One Pilots</li>
+            <li>Immortals by Fall Out Boy</li>
+            <li>Run Boy Run by The Script, will.i.am</li>
+            <li>Take Me To Church by Hozier</li>
+            <li>High Hopes by Panic! At The Disco</li>
+            <li>How Far We've Come by Matchbox Twenty</li>
+            <li>I'm Just a Kid by Simple Plan</li>
+            <li>Born For This by The Score</li>
+          </ul>
+        </div>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("batfam-songs-list");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("batfam-songs");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    <footer>
+        <p id="f-info">2024 - Luce DeWitt &copy;</p>
+        <p id="f-credit">Credit to DC for the creation of the characters</p>
+        <a href="siteplan.html" alt="siteplan">Siteplan</a>
+    </footer>
+</body>
+</html>
