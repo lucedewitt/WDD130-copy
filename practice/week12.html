@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Component Activity</title>
+    <link rel="stylesheet" href="styles/week12.css">
+</head>
+
+<body>
+    <!-- press alt z to word wrap -->
+    <!-- press alt shift f to format -->
+    <h1>Genshin Impact</h1>
+    <button class="accordion">Introduction to Genshin Impact</button>
+    <div class="panel">
+        <p>Genshin Impact is a popular action role-playing game developed by miHoYo. Released in September 2020, it
+            features an expansive open world filled with stunning visuals, engaging gameplay, and rich lore. Set in the
+            fantasy world of Teyvat, players control the "Traveler" who searches for their lost sibling while unraveling
+            the secrets of each of the seven regions. The game blends exploration, puzzle-solving, and fast-paced combat
+            to create an immersive experience.</p>
+    </div>
+
+    <button class="accordion">Characters and Abilities</button>
+    <div class="panel">
+        <p>One of Genshin Impact's standout features is its diverse cast of playable characters. Each character wields a
+            unique set of elemental abilities, from the fiery power of Pyro to the watery flow of Hydro. Players can
+            build a team of up to four characters, each offering different playstyles and elemental synergies. By
+            switching between characters mid-combat, players can unleash powerful combos, adding depth and strategy to
+            the fast-paced action.</p>
+    </div>
+
+    <button class="accordion">Regular Updates and Events</button>
+    <div class="panel">
+        <p>miHoYo continues to support Genshin Impact with regular updates, introducing new content such as characters,
+            quests, and limited-time events. Each update brings fresh storylines, seasonal festivals, and even new
+            regions to explore. The game's live-service model ensures there's always something new for players to
+            discover, keeping the experience exciting and ever-evolving. Whether you're grinding for new gear or
+            participating in time-limited events, there's always something to keep you coming back.</p>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                /* Toggle between adding and removing the "active" class,
+                to highlight the button that controls the panel */
+                this.classList.toggle("active");
+
+                /* Toggle between hiding and showing the active panel */
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
