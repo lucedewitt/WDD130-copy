@@ -113,24 +113,54 @@
             </div>
         </div>
     </div>
-    <button id="tim-songs">♪</button>
+    <div class="button">
+        <button id="tim-songs">♪</button>
+    </div>
     <div id="tim-songs-list" class="modal">
-        <div class="modal">
-          <span class="close">&times;</span>
-          <ul>
-            <li>People Watching by Conan Gray</li>
-            <li>I'm Still Standing by Elton John</li>
-            <li>Are You Satisfied by MARINA</li>
-            <li>Sharks by Imagine Dragons</li>
-            <li>Unsteady by X Ambassadors</li>
-            <li>Can't Hold Us by Macklemore</li>
-            <li>Fine by Kyle Hume</li>
-            <li>The Last Of The Real Ones by Fall Out Boy</li>
-            <li>Numb Little Bug by Em Beihold</li>
-            <li>Bad Day by Daniel Powter</li>
+        <div class="modal-content" id="tim-song-content">
+            <span class="close">&times;</span>
+            <h1 class="h-font">Themed Song Recommendations</h1>
+            <ul>
+                <li>People Watching by Conan Gray</li>
+                <li>I'm Still Standing by Elton John</li>
+                <li>Are You Satisfied by MARINA</li>
+                <li>Sharks by Imagine Dragons</li>
+                <li>Unsteady by X Ambassadors</li>
+                <li>Can't Hold Us by Macklemore</li>
+                <li>Fine by Kyle Hume</li>
+                <li>The Last Of The Real Ones by Fall Out Boy</li>
+                <li>Numb Little Bug by Em Beihold</li>
+                <li>Bad Day by Daniel Powter</li>
           </ul>
         </div>
     </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("tim-songs-list");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("tim-songs");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
     <footer>
         <p id="f-info">2024 - Luce DeWitt &copy;</p>
         <p id="f-credit">Credit to DC for the creation of the characters</p>
