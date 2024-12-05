@@ -215,7 +215,8 @@ button {
     font-weight: bold;
 }
 
-.close:hover, .close:focus {
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
@@ -362,7 +363,8 @@ ul {
     transform: rotateX(180deg);
 }
 
-.flip-box-front, .flip-box-back {
+.flip-box-front,
+.flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -394,4 +396,181 @@ ul {
 
 #richard-songs {
     background-color: #0BC5FE;
+}
+
+
+/* Jason's Page */
+.j-font {
+    font-family: "Jim Nightshade", cursive;
+    font-size: 275%;
+    color: #A01825;
+}
+
+#jason-banner {
+    max-width: 100%;
+    background-color: #000100;
+    color: #D91C26;
+    font-family: "Jim Nightshade", cursive;
+    padding: 10px;
+    text-align: center;
+    font-size: 250%;
+    border-bottom: solid 7px #253241;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+}
+
+#jason-banner h1 {
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+#jason-maincontent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 450px 700px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#jason-background {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+}
+
+#jason-photo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#jason-history {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    text-align: left;
+}
+
+#jason-slides {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+}
+
+#jason-skills {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#jason-skills h2 {
+    margin-bottom: 20px;
+}
+
+#jason-skills ul {
+    list-style-position: inside;
+    padding-left: 0px;
+    font-size: 1.25em;
+}
+
+.j-slide-img {
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+    width: 400px;
+    height: 566px;
+    text-align: center;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #3D1D00;
+    padding: 2px 16px;
+    color: white;
+}
+
+#caption {
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.33%;
+    height: 70px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+#jason-songs {
+    color: white;
+    background-color: #253241;
+}
+
+#jason-song-content h1 {
+    padding-left: 40px;
 }
