@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Damian Wayne</title>
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <nav>
         <a href="index.html" class="h-font">Home</a>
@@ -18,72 +20,79 @@
         <h1>Damian Wayne</h1>
     </div>
     <!-- Slideshow container -->
-    <div class="slideshow-container">
+    <div id="d-slideshow">
+        <div class="d-slideshow-container">
 
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
-            <img src="images/robin_damian.jpg" style="width:100%">
-            <div class="text">Damain as Robin</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
-            <img src="images/damian_eras.jpg" style="width:100%">
-            <div class="text">Damain through the ages</div>
-        </div>
-    
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <img src="images/assassin_damian.jpg" style="width:100%">
-            <div class="text">League of Assassins Damian</div>
-        </div>
+            <!-- Full-width images with number and caption text -->
+            <div class="d-mySlides d-fade">
+                <img src="images/robin_damian2.jpg">
+            </div>
 
-        <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="images/normal_damian.jpg" style="width:100%">
-            <div class="text">Damian Wayne</div>
+            <div class="d-mySlides d-fade">
+                <img src="images/damian_eras2.jpg">
+            </div>
+
+            <div class="d-mySlides d-fade">
+                <img src="images/assassin_damian2.jpg">
+            </div>
+
+            <div class="d-mySlides d-fade">
+                <img src="images/normal_damian2.jpg">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="d-prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="d-next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <!-- The dots/circles -->
+        <div id="dots" style="text-align:center">
+            <span class="d-dot" onclick="currentSlide(1)"></span>
+            <span class="d-dot" onclick="currentSlide(2)"></span>
+            <span class="d-dot" onclick="currentSlide(3)"></span>
+            <span class="d-dot" onclick="currentSlide(4)"></span>
+        </div>
     </div>
-    <br>
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-    </div>
-    <div id="damian-background">
-        <h2>Background</h2>
-        <p>Damian is the biological son of Bruce and Talia Al Ghul. He was raised by the League of Assassins, and is a trained assassin. He grew up as heir, so he was both spoiled and abused. When Damian was 10, he was sent to Gotham to meet his father. After learning to kill, and being told that he would be the next Robin, Damian is dissapointed when he father is wary of him. Soon after arriving, with a still rocky relationship with his father, Bruce dies. Alfred gives Damian the Robin suit, and Dick officially makes Damian Robin so he won't return to the League of Assassins.</p>
-    </div>
-    <div id="damian-history">
-        <h2>Brief History</h2>
-        <p>Damian is trained and mentored by Dick as Batman. Dick teaches Damian not to kill, and to have empathy. Damian grows a lot under the care of Dick, and they remain close to this day. When Dick returns from Spyral, Damian is the only one happy to see them. They both believe that "we were the best". Damian is Dick's Robin, and the only one Dick directly passed his mother's nickname to.</p>
-        <p>When Bruce returns, Damian becomes his Robin. Though they had a rough start, they do eventually begin to work well together. Later, Damian is killed by his own clone, The Heretic, sent by his mother. Damian is eventually revived by the Chaos Shard. Damian joins the Teen Titans, and is especially close with Jon, Superman's son. Damian is the current Robin in comics, at 14 years old.</p>
-    </div>
-    <div id="damian-skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Master Martial Artist (knows as many forms as Batman)</li>
-            <li>Assassin</li>
-            <li>Exceptional Hearing (only Robin with a hood)</li>
-            <li>Stealth</li>
-            <li>Acrobat</li>
-            <li>Intelligent (iq that matches Batman)</li>
-            <li>Archer</li>
-            <li>Hacker</li>
-            <li>Escape Artist</li>
-            <li>Intimidation</li>
-            <li>Investigation</li>
-            <li>Master of Wepons (including swords and guns)</li>
-            <li>Occultism (knows of magic, and can use one spell)</li>
-            <li>Peak Condition (strenth, speed, durability, reflexes, etc)</li>
-          </ul>
+    <div id="damian-content">
+        <div id="damian-background">
+            <h2 class="d-font">Background</h2>
+            <p>Damian is the biological son of Bruce and Talia Al Ghul. He was raised by the League of Assassins, and is
+                a trained assassin. He grew up as the heir, so he was both spoiled and abused. When Damian was 10, he was
+                sent to Gotham to meet his father. After learning to kill, and being told that he would be the next
+                Robin, Damian is dissapointed when he father is wary of him. Soon after arriving, with a still rocky
+                relationship with his father, Bruce dies. Alfred gives Damian the Robin suit, and Dick officially makes
+                Damian Robin so he won't return to the League of Assassins.</p>
+        </div>
+        <div id="damian-history">
+            <h2 class="d-font">Brief History</h2>
+            <p>Damian is trained and mentored by Dick as Batman. Dick teaches Damian empathy and compassion for other people.
+                Damian grows a lot under Dick's care, and they remain close to this day. When Dick returns from
+                Spyral, Damian is the only one happy to see them. They both believe that "we were the best". Damian is
+                Dick's Robin, and the only one Dick directly passed his mother's nickname to.</p>
+            <p>When Bruce returns, Damian becomes his Robin. Though they had a rough start, they do eventually begin to
+                work well together. Later, Damian is killed by his own clone, The Heretic, sent by his mother. Damian is
+                eventually revived by the Chaos Shard. Damian joins the Teen Titans, and is especially close with Jon,
+                Superman's son. Damian is the current Robin in comics, at 14 years old.</p>
+        </div>
+        <div id="damian-skills">
+            <h2 class="d-font">Skills</h2>
+            <ul>
+                <li>Master Martial Artist (knows as many forms as Batman)</li>
+                <li>Assassin</li>
+                <li>Exceptional Hearing (only Robin with a hood)</li>
+                <li>Stealth</li>
+                <li>Acrobat</li>
+                <li>Intelligent (iq that matches Batman)</li>
+                <li>Archer</li>
+                <li>Hacker</li>
+                <li>Escape Artist</li>
+                <li>Intimidation</li>
+                <li>Investigation</li>
+                <li>Master of Wepons (including swords and guns)</li>
+                <li>Occultism (knows of magic, and can use one spell)</li>
+                <li>Peak Condition (strenth, speed, durability, reflexes, etc)</li>
+            </ul>
+        </div>
     </div>
     <div class="button">
         <button id="damian-songs">♪</button>
@@ -91,46 +100,74 @@
     <div id="damian-songs-list" class="modal">
         <div class="modal-content" id="damian-song-content">
             <span class="close">&times;</span>
-            <h1 class="h-font">Themed Song Recommendations</h1>
+            <h1>Themed Song Recommendations</h1>
             <ul>
                 <li>I'm Not Angry Anymore by Paramore</li>
                 <li>Lion by Saint Mesa</li>
                 <li>Treehouse by Kiddubs</li>
-                <li>I Am Not a Robot my MARINA</li>
+                <li>I Am Not a Robot by MARINA</li>
                 <li>Natural by Imagine Dragons</li>
                 <li>The Nights by Avicii</li>
                 <li>Lemon Boy by Cavetown</li>
                 <li>I'll Be Good by Jaymes Young</li>
                 <li>The Moon Will Sing by The Crane Wives</li>
                 <li>Feel Something by Jaymes Young</li>
-          </ul>
+            </ul>
         </div>
     </div>
     <script>
         // Get the modal
         var modal = document.getElementById("damian-songs-list");
-        
+
         // Get the button that opens the modal
         var btn = document.getElementById("damian-songs");
-        
+
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-        
+
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-          modal.style.display = "block";
+        btn.onclick = function () {
+            modal.style.display = "block";
         }
-        
+
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-          modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-          if (event.target == modal) {
+        span.onclick = function () {
             modal.style.display = "none";
-          }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("d-mySlides");
+            let dots = document.getElementsByClassName("d-dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
     </script>
     <footer>
@@ -139,4 +176,5 @@
         <a href="siteplan.html">Siteplan</a>
     </footer>
 </body>
+
 </html>

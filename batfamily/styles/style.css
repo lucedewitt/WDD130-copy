@@ -388,14 +388,18 @@ ul {
     max-height: 100%;
 }
 
-#richard-song-content {
-    color: #0BC5FE;
-    /* color: #0096E0; */
-    /* color: #164EA2; */
-}
-
 #richard-songs {
     background-color: #0BC5FE;
+}
+
+#richard-song-content h1 {
+    font-family: "Grechen Fuemen", cursive;
+    font-size: 250%;
+    color: #0096E0;
+}
+
+#richard-song-content ul {
+    padding-left: 0px;
 }
 
 
@@ -576,6 +580,9 @@ ul {
 
 #jason-song-content h1 {
     padding-left: 40px;
+    font-family: "Jim Nightshade", cursive;
+    font-size: 275%;
+    color: #D91C26;
 }
 
 
@@ -698,7 +705,8 @@ ul {
     font-weight: bold;
 }
 
-.t-close:hover, .t-close:focus {
+.t-close:hover,
+.t-close:focus {
     color: #A3000E;
     text-decoration: none;
     cursor: pointer;
@@ -713,7 +721,8 @@ ul {
 }
 
 /* Next & previous buttons */
-.t-prev, .t-next {
+.t-prev,
+.t-next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -736,7 +745,8 @@ ul {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.t-prev:hover, .t-next:hover {
+.t-prev:hover,
+.t-next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -764,7 +774,8 @@ ul {
     width: 80%;
 }
 
-.t-active, .t-demo:hover {
+.t-active,
+.t-demo:hover {
     opacity: 1;
 }
 
@@ -778,4 +789,164 @@ ul {
 
 #tim-songs {
     background-color: #FF0A2B;
+}
+
+#tim-song-content h1 {
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 225%;
+    color: #E5A224;
+}
+
+
+/* Damain's Page */
+.d-font {
+    font-family: "Bonheur Royale", cursive;
+    font-size: 260%;
+    color: #042A09;
+}
+
+#damian-banner {
+    max-width: 100%;
+    background-color: #02090D;
+    color: #0F7936;
+    font-family: "Bonheur Royale", cursive;
+    padding: 20px;
+    text-align: center;
+    font-size: 250%;
+    border-bottom: solid 7px #F5A435;
+}
+
+#damian-banner h1 {
+    margin: 0px;
+}
+
+#d-slideshow {
+    text-align: center;
+    border-top: solid 7px #C51D07;
+}
+
+#d-slideshow img {
+    vertical-align: middle;
+}
+
+.d-mySlides {
+    display: none;
+    padding-top: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Next & previous buttons */
+.d-prev,
+.d-next {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #0F7936;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.d-next {
+    right: 550px;
+    border-radius: 3px 0 0 3px;
+}
+
+.d-prev {
+    left: 550px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.d-prev:hover,
+.d-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#dots {
+    position: absolute;
+    left: 730px;
+    top: 590px;
+}
+
+/* The dots/bullets/indicators */
+.d-dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0px;
+    background-color: #F5A435B8;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.d-active,
+.d-dot:hover {
+    background-color: #C51D07;
+    ;
+}
+
+/* Fading animation */
+.d-fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+#damian-content {
+    text-align: center;
+}
+
+#damian-skills ul {
+    list-style-position: inside;
+    padding-left: 0px;
+}
+
+#damian-background h2 {
+    margin-top: 0px;
+    margin-bottom: 29px;
+}
+
+#damian-songs {
+    background-color: #C51D07;
+    margin-top: 40px;
+}
+
+#damian-song-content h1 {
+    font-family: "Bonheur Royale", cursive;
+    font-size: 275%;
+    color: #0F7936;
+    padding-left: 40px;
 }
